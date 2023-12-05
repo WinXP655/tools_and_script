@@ -5,6 +5,7 @@ if exist log.txt (
 )
 setlocal enabledelayedexpansion
 echo PC Tester
+echo Log will be saved as: %cd%\log.txt
 echo Level choice
 echo.
 echo 5 laps - Poor
@@ -66,7 +67,7 @@ for /f "tokens=1-4 delims=:.," %%a in ("%time%") do (
 )
 
 REM Calculate the elapsed time
-set /A elapsed=end-start
+set /A elapsed=(end-start)*10
 
 echo Test completed in %elapsed% ms. >> log.txt
 echo Test completed in %elapsed% milliseconds. Press any key to run again or close this window to exit.
