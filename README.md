@@ -1,3 +1,4 @@
 # tools_and_script
 Tools and script
-This is a repository that contains useful and fun scripts on various programming languages
+
+Just a random set of scripts and another useful stuff.
